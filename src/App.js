@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { StopWatch } from "./components/StopWatch";
+import { Timer } from "./components/Timer";
+import { Todo } from "./components/Todo";
+import { TodosPrevioswall } from "./components/TodosPrevioswall";
+import { Form } from "./components/Form";
+import {TodoAchhat} from "./components/TodoAchhat"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ return (
+   <div>
+     {/* <Todo/> */}
+     {/* <Timer start={10} endpoint={30}/> */}
+     {/* <StopWatch/> */}
+     {/* <TodosPrevioswall /> */}
+     <Form/>
+     {/* <TodoAchhat/> */}
+   </div>
+ )
+ 
 }
 
 export default App;

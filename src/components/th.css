@@ -1,0 +1,28 @@
+table{
+    margin: auto;
+    width: 1200px;
+    border: 1px solid black;
+}
+thead tr{
+   /* background-color: black; */
+   height: 40px;
+    background-color: aqua;
+    color: black;
+    min-height: 150px;
+}
+tbody tr td{
+    /* margin: 50px; */
+    padding: 30px;
+    border: 1px solid black;
+    text-align: center;
+}
+tbody tr td img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}

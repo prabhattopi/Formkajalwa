@@ -1,0 +1,20 @@
+{
+  "todos": [
+    {
+      "id":1,
+      "username":"Prabhat Ranjan Singh",
+      "email":"Tobijsdf@gamil.com",
+      "password":"325dfe5rf435",
+      "age":0,
+      "isIndian":false
+    },
+    {
+      "id":2,
+      "username":"Prabhat Ranjan Singh",
+      "email":"Tobijsdf@gamil.com",
+      "password":"325dfe5rf435",
+      "age":0,
+      "isIndian":false
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "todos": [
+    {
+      "username": "Prabhat ranjan singh",
+      "address": "Patharkuchi Road, Navoday Nagar, Pator Kuchi, Guwahati, Assam, byelane 02 h.no07",
+      "salary": "5000000",
+      "age": "19",
+      "maratialStatus": false,
+      "department": "backend",
+      "resume": "",
+      "id": 4
+    }
+  ]
+}

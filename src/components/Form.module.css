@@ -1,0 +1,61 @@
+
+h1{
+    text-align: center;
+}
+select{
+    height: 30px;
+    margin: 3px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-wrap: wrap;
+    
+}
+form>div{
+    margin: 10px;
+}
+form>div>input{
+    outline: none;
+    padding: 5px;
+    border-radius:5px ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+    font-size: 16px;
+}
+button{
+    padding: 9px 40px;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:disabled{
+    background-color: gray;
+    color: rgb(3, 3, 3);
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+form>div>button{
+    padding: 20px;
+}
