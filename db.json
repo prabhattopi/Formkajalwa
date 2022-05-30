@@ -3,12 +3,57 @@
     {
       "username": "Prabhat ranjan singh",
       "address": "Patharkuchi Road, Navoday Nagar, Pator Kuchi, Guwahati, Assam, byelane 02 h.no07",
-      "salary": "5000000",
-      "age": "19",
+      "salary": "",
+      "age": 0,
       "maratialStatus": false,
-      "department": "backend",
+      "department": "",
       "resume": "",
+      "valuey": "",
+      "id": 1
+    },
+    {
+      "username": "Prabhat ranjan singh",
+      "address": "Patharkuchi Road, Navoday Nagar, Pator Kuchi, Guwahati, Assam, byelane 02 h.no07",
+      "salary": "",
+      "age": 0,
+      "maratialStatus": false,
+      "department": "",
+      "resume": "",
+      "valuey": "",
+      "id": 2
+    },
+    {
+      "username": "Rohit",
+      "address": "Patharkuchi Road, Navoday Nagar, Pator Kuchi, Guwahati, Assam, byelane 02 h.no07",
+      "salary": "",
+      "age": 0,
+      "maratialStatus": false,
+      "department": "",
+      "resume": "",
+      "valuey": "",
+      "id": 3
+    },
+    {
+      "username": "",
+      "address": "",
+      "salary": "43534534",
+      "age": 0,
+      "maratialStatus": false,
+      "department": "",
+      "resume": "",
+      "valuey": "",
       "id": 4
+    },
+    {
+      "username": "",
+      "address": "",
+      "salary": "43534",
+      "age": 0,
+      "maratialStatus": false,
+      "department": "",
+      "resume": "",
+      "valuey": "",
+      "id": 5
     }
   ]
 }

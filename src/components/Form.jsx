@@ -13,7 +13,9 @@ import styles from './Form.module.css'
 
 export const Form = () => {
     const [limit, setLimit] = useState(5)
+  
     const [page,setPage]=useState(1)
+    const [sortvalue,setSortValue]=useState("")
     const [totalCount,setTotalCount]=useState(0)
     const [form, setForm] = useState({
         username:'',
@@ -23,7 +25,8 @@ export const Form = () => {
         maratialStatus:false,
         maratialStatus2:false,
         department:"",
-        resume:""
+        resume:"",
+        valuey:""
     })
     const [todos, setTodos] = useState([])
 
@@ -79,7 +82,7 @@ export const Form = () => {
      
     }, [form])
     
-
+    const sortOptions=["name","address","salary"]
     const HandleonSubit=async(e)=>{
         e.preventDefault()
       
@@ -92,7 +95,9 @@ export const Form = () => {
         maratialStatus:form.maratialStatus,
         maratialStatus:form.maratialStatus2,
         department:form.department,
-        resume:form.resume
+        resume:form.resume,
+        valuey:form.valuey
+       
       
       })
       let r=await axios.get(`http://localhost:8080/todos?_page=${page}&_limit=${limit}`)
@@ -127,6 +132,33 @@ export const Form = () => {
 
       
       }
+      const handleReset=()=>{
+
+          Tbho()
+      }
+      const handlesub=async (e)=>{
+          e.preventDefault()
+          return await axios.get(`http://localhost:8080/todos?q=${form.valuey}`).then((response)=>{
+            setTodos(response.data)
+        
+          })
+
+
+
+      }
+      const handlesort=async (e)=>{
+        let value=e.target.value
+        setSortValue(value)
+          return await axios.get(`http://localhost:8080/todos?_sort=${value}&_order=asc`).then((response)=>{
+            setTodos(response.data)
+        
+          })
+
+
+
+      }
+
+    
 
 
 
@@ -146,6 +178,25 @@ export const Form = () => {
          <option value="10">10</option>
        </select>
        <button disabled={totalCount<page*limit} onClick={()=>setPage(page+1)}>{">"}</button>
+       <form onSubmit={handlesub}>
+       <input type="text" placeholder='Search....' name='valuey' value={form.valuey}  onChange={HandleonChange}/>
+       <button type="submit" style={{margin:"10px"}} onClick={()=>{handleReset()}}>Search</button>
+       <button>Reset</button>
+       </form>
+       <label>Sort By</label>
+       <select name="" id="" onChange={handlesort}  value={sortvalue}>
+           <option>Plese Select Value</option>
+           {sortOptions.map((item,index)=>{
+               return (
+                   <option value={item} key={index}>{item}</option>
+               )
+            
+
+           })}
+
+       </select>
+       <label>Filete By:</label>
+       <button></button>
      <h1>FORM</h1>
         <form onSubmit={ HandleonSubit}>
             <div>
