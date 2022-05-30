@@ -1,34 +1,34 @@
 {
   "todos": [
     {
-      "username": "Prabhat ranjan singh",
-      "address": "Patharkuchi Road, Navoday Nagar, Pator Kuchi, Guwahati, Assam, byelane 02 h.no07",
+      "username": "",
+      "address": "",
       "salary": "",
       "age": 0,
       "maratialStatus": false,
-      "department": "",
+      "department": "backend",
       "resume": "",
       "valuey": "",
       "id": 1
     },
     {
-      "username": "Prabhat ranjan singh",
-      "address": "Patharkuchi Road, Navoday Nagar, Pator Kuchi, Guwahati, Assam, byelane 02 h.no07",
+      "username": "",
+      "address": "",
       "salary": "",
       "age": 0,
       "maratialStatus": false,
-      "department": "",
+      "department": "Frontend",
       "resume": "",
       "valuey": "",
       "id": 2
     },
     {
-      "username": "Rohit",
-      "address": "Patharkuchi Road, Navoday Nagar, Pator Kuchi, Guwahati, Assam, byelane 02 h.no07",
+      "username": "",
+      "address": "",
       "salary": "",
       "age": 0,
       "maratialStatus": false,
-      "department": "",
+      "department": "backend",
       "resume": "",
       "valuey": "",
       "id": 3
@@ -36,24 +36,13 @@
     {
       "username": "",
       "address": "",
-      "salary": "43534534",
+      "salary": "",
       "age": 0,
       "maratialStatus": false,
-      "department": "",
+      "department": "ComputerScience",
       "resume": "",
       "valuey": "",
       "id": 4
-    },
-    {
-      "username": "",
-      "address": "",
-      "salary": "43534",
-      "age": 0,
-      "maratialStatus": false,
-      "department": "",
-      "resume": "",
-      "valuey": "",
-      "id": 5
     }
   ]
 }
