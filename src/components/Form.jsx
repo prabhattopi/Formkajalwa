@@ -11,6 +11,7 @@ export const Form = () => {
   const [page, setPage] = useState(1);
   const [sortvalue, setSortValue] = useState("");
   const [totalCount, setTotalCount] = useState(0);
+  const [lata,setLata]=useState("")
   const [form, setForm] = useState({
     username: "",
     address: "",
@@ -119,7 +120,7 @@ export const Form = () => {
     let value = e.target.value;
     setSortValue(value);
     return await axios
-      .get(`http://localhost:8080/todos?_sort=${value}&_order=asc`)
+      .get(`http://localhost:8080/todos?todos?department=${lata}&_sort=${value}&_order=asc`)
       .then((response) => {
         setTodos(response.data);
       });
@@ -127,6 +128,7 @@ export const Form = () => {
     
   };
   const handlefilter = async (valuei) => {
+    setLata(valuei)
    
     return await axios
       .get(`http://localhost:8080/todos?department=${valuei}&_sort=${sortvalue}&_order=asc`)
