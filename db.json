@@ -3,33 +3,33 @@
     {
       "username": "",
       "address": "",
-      "salary": "",
+      "salary": "212",
       "age": 0,
       "maratialStatus": false,
-      "department": "backend",
-      "resume": "",
+      "department": "ComputerScience",
+      "resume": null,
       "valuey": "",
       "id": 1
     },
     {
       "username": "",
       "address": "",
-      "salary": "",
+      "salary": "212",
       "age": 0,
       "maratialStatus": false,
-      "department": "Frontend",
-      "resume": "",
+      "department": "backend",
+      "resume": null,
       "valuey": "",
       "id": 2
     },
     {
       "username": "",
       "address": "",
-      "salary": "",
+      "salary": "212545",
       "age": 0,
       "maratialStatus": false,
       "department": "backend",
-      "resume": "",
+      "resume": null,
       "valuey": "",
       "id": 3
     },
@@ -37,12 +37,23 @@
       "username": "",
       "address": "",
       "salary": "",
-      "age": 0,
+      "age": "100",
       "maratialStatus": false,
-      "department": "ComputerScience",
-      "resume": "",
+      "department": "backend",
+      "resume": null,
       "valuey": "",
       "id": 4
+    },
+    {
+      "username": "",
+      "address": "",
+      "salary": "100",
+      "age": "100",
+      "maratialStatus": false,
+      "department": "backend",
+      "resume": null,
+      "valuey": "",
+      "id": 5
     }
   ]
 }

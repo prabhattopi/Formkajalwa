@@ -11,7 +11,7 @@ export const FormList = ({todo,getto}) => {
   // }
   return (
    <tr>
-       <td> <img src="" alt="" /></td>
+       <td> <img src={todo.resume} alt="" /></td>
        <td className="Name">{todo.username}</td>
        <td className="age">{todo.age}</td>
        <td className="adress">{todo.address}</td>

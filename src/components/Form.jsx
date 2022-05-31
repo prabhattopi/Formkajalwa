@@ -19,7 +19,7 @@ export const Form = () => {
     maratialStatus: false,
     maratialStatus2: false,
     department: "",
-    resume: "",
+    resume: null,
     valuey: "",
   });
   const [todos, setTodos] = useState([]);
@@ -49,7 +49,7 @@ export const Form = () => {
     } else if (type == "file") {
       setForm({
         ...form,
-        [name]: files[0].name,
+        resume: files[0].name,
       });
     } else {
       setForm({
@@ -123,11 +123,13 @@ export const Form = () => {
       .then((response) => {
         setTodos(response.data);
       });
+
+    
   };
   const handlefilter = async (valuei) => {
    
     return await axios
-      .get(`http://localhost:8080/todos?department=${valuei}`)
+      .get(`http://localhost:8080/todos?department=${valuei}&_sort=${sortvalue}&_order=asc`)
       .then((response) => {
           console.log(response.data)
         setTodos(response.data);
@@ -318,6 +320,7 @@ export const Form = () => {
             type="file"
             accept="image/png ,image/jpg , pdf"
             name="resume"
+            // checked={form.resume}
             checked={form.resume}
             onChange={HandleonChange}
           />
